@@ -1,0 +1,14 @@
+p, role:reader, domain1, group:commongroup, read
+p, role:writer, domain1, group:commongroup, write
+p, role:super, domain1, group:commongroup, manage
+
+g, role:admin, role:reader, domain1
+g, role:admin, role:writer, domain1
+g, role:super, role:admin, domain1
+g, alice, role:super, domain1
+g, bob, role:reader, domain1
+g, clark, role:admin, domain1
+
+g2, group:datagroup, group:commongroup, domain1
+g2, data1, group:datagroup, domain1
+g2, data2, group:datagroup, domain1
